@@ -1,0 +1,11 @@
+version: "3.8"
+services:
+  agent:
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile
+    volumes:
+      - ..:/app
+    environment:
+      - OPENAI_API_KEY
+    command: ["python", "-m", "self_editing_ai.src.cli", "--goal", "Run default goal"]
