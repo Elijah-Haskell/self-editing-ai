@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "self_editing_ai"
+version = "0.1.0"
+description = "Autonomous self‑editing AI framework"
+readme = "README.md"
+authors = [ { name="OpenAI Assistant", email="assistant@example.com" } ]
+license = { text = "MIT" }
+requires-python = ">=3.10"
+dependencies = [
+    "openai>=0.27",
+    "faiss-cpu>=1.7",
+    "tiktoken>=0.5",
+    "requests>=2.30",
+    "python-dotenv>=1.0",
+    "pytest>=7.4",
+]
+
+[project.urls]
+homepage = "https://example.com/self_editing_ai"
+"bug tracker" = "https://example.com/self_editing_ai/issues"
